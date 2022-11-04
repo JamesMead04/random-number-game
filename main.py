@@ -1,21 +1,13 @@
 import random
 def random_function():
   number = random.randint(0,100)
-  return number
+  guess = -1
+  message = "guess a number 1 to 100"
+  while guess != number:
+    guess = int(input(message))
 
   
-def check_guess(guess,number,answer="Correct"):
-  if guess > number:
-    answer = "lower"
-  elif guess < number:
-    answer = "higher"
-  return answer
 
-def play_game(guess,number):
-  answer = "0git"
-  while answer != "Correct":
-    guess = int(input(check_guess(guess,number)))
-    answer = check_guess(guess,number)
 
 
   
