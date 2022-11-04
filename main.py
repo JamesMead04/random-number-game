@@ -5,6 +5,15 @@ def random_function():
   message = "guess a number 1 to 100"
   while guess != number:
     guess = int(input(message))
+    if guess > number:
+      message = "Lower"
+    elif guess < number:
+      message = "Higher"
+    else:
+      message = "well done you got it"
+  print(message)
+
+random_function()
 
   
 
